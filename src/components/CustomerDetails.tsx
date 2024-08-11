@@ -38,14 +38,14 @@ const CustomerDetails = ({
   }, [customerId]);
 
   return (
-    <div className="w-full p-12 pt-8">
-      <div className="flex flex-col justify-center items-center gap-2">
+    <div className="w-full p-12 pt-8 items-center flex flex-col">
+      <div className="flex flex-col justify-center items-center gap-2 max-w-screen-lg">
         <h2 className="text-2xl font-medium">{customerName}</h2>
         <p className="text-gray-700">{customerAddress}</p>
         <p className="text-sm text-gray-500 text-center">{customerDetails}</p>
       </div>
 
-      <div className="grid grid-cols-3 gap-12 mt-8">
+      <div className="grid grid-cols-3 gap-12 mt-8 max-w-screen-md">
         {imgUrls.map((url, index) => (
           <img
             src={url}
